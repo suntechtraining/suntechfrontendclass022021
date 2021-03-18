@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dựng Giao Diện Tin Tức Đơn Giản Với Float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 1024px;
+            margin: 0px auto;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        #menu {
+            width: 100%;
+            background: #4caf50;
+            height: 40px;
+        }
+
+        #menu ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        #menu ul li {
+            display: inline-block;
+            line-height: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: #FFF;
+        }
+
+        #menu ul li:hover {
+            background: orange;
+            cursor: pointer;
+        }
+
+        #left, #right {
+            width: 20%;
+            min-height: 600px;
+            background: #bdbdbd;
+            float: left;
+        }
+
+        #left ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        #left ul li a {
+            display: block;
+            background: orange;
+            border-bottom: 1px solid #f1f1f1;
+            text-decoration: none;
+            line-height: 40px;
+            padding-left: 30px;
+            color: #999;
+            background: #FFF url(./images/icon.png) no-repeat left center;
+        }
+
+        #left ul li a:hover {
+            color: #000;
+            border-right: 2px solid red;
+        }
+
+        #center {
+            width: 60%;
+            min-height: 600px;
+            float: left;
+            padding-bottom: 15px;
+        }
+
+        #center ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        #center ul li {
+            width: 100%;
+            display: block;
+            clear: left;
+            float: left;
+            margin-top: 15px;
+            line-height: 22px;
+        }
+
+        #center ul li h2 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        #center ul li img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        #footer {
+            background: #000;
+            height: 45px;
+            color: #FFF;
+            text-align: center;
+            clear: left;
+            line-height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>News</li>
+            <li>Product</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>Đăng ký học</li>
+        </ul>
+    </div>
+    <div id="left">
+        <ul>
+            <li><a href="">Mac</a></li>
+            <li><a href="">Dell</a></li>
+            <li><a href="">Asus</a></li>
+            <li><a href="">Lenovo</a></li>
+            <li><a href="">Vios</a></li>
+            <li><a href="">Think Pad</a></li>
+            <li><a href="">Xiaomi</a></li>
+        </ul>
+    </div>
+    <div id="center">
+        <ul>
+            <li>
+                <h2>Đề xuất đầu tư cao tốc TP HCM - Chơn Thành 36.000 tỷ đồng</h2>
+                <img src="./images/a.png" alt="" />
+                Cao tốc TP HCM - Thủ Dầu Một - Chơn Thành đi qua TP HCM, Bình Dương, Bình Phước được đề xuất triển khai từ nay đến năm 2025, tổng vốn 36.000 tỷ đồng. Thông tin được đưa ra tại buổi làm việc giữa lãnh đạo Thành ủy TP HCM và Tỉnh ủy Bình Phước ngày 18/3, liên quan triển khai dự án cao tốc nói trên nhằm tăng kết nối và đồng bộ 
+            </li>
+            <li>
+                <h2>Đề xuất đầu tư cao tốc TP HCM - Chơn Thành 36.000 tỷ đồng</h2>
+                <img src="./images/b.jpg" alt="" />
+                Cao tốc TP HCM - Thủ Dầu Một - Chơn Thành đi qua TP HCM, Bình Dương, Bình Phước được đề xuất triển khai từ nay đến năm 2025, tổng vốn 36.000 tỷ đồng. Thông tin được đưa ra tại buổi làm việc giữa lãnh đạo Thành ủy TP HCM và Tỉnh ủy Bình Phước ngày 18/3, liên quan triển khai dự án cao tốc nói trên nhằm tăng kết nối và đồng bộ
+            </li>
+            <li>
+                <h2>Đề xuất đầu tư cao tốc TP HCM - Chơn Thành 36.000 tỷ đồng</h2>
+                <img src="./images/c.jpg" alt="" />
+                Cao tốc TP HCM - Thủ Dầu Một - Chơn Thành đi qua TP HCM, Bình Dương, Bình Phước được đề xuất triển khai từ nay đến năm 2025, tổng vốn 36.000 tỷ đồng. Thông tin được đưa ra tại buổi làm việc giữa lãnh đạo Thành ủy TP HCM và Tỉnh ủy Bình Phước ngày 18/3, liên quan triển khai dự án cao tốc nói trên nhằm tăng kết nối và đồng bộ 
+            </li>
+            <li>
+                <h2>Đề xuất đầu tư cao tốc TP HCM - Chơn Thành 36.000 tỷ đồng</h2>
+                <img src="./images/d.jpg" alt="" />
+                Cao tốc TP HCM - Thủ Dầu Một - Chơn Thành đi qua TP HCM, Bình Dương, Bình Phước được đề xuất triển khai từ nay đến năm 2025, tổng vốn 36.000 tỷ đồng. Thông tin được đưa ra tại buổi làm việc giữa lãnh đạo Thành ủy TP HCM và Tỉnh ủy Bình Phước ngày 18/3, liên quan triển khai dự án cao tốc nói trên nhằm tăng kết nối và đồng bộ 
+            </li>
+        </ul>
+    </div>
+    <div id="right">Right</div>
+    <div id="footer">Footer</div>
+</body>
+</html>
