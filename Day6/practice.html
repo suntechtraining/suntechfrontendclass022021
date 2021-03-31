@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice with flex box</title>
+	<style>
+		body {
+			width: 1024px;
+			margin: 0px auto;
+		}
+
+		.menu {
+			height: 45px;
+			width: 100%;
+			background: orange;
+		}
+
+		.container {
+			display: flex;
+		}
+
+		.left, .right {
+			width: 20%;
+			background: #999;
+			min-height: 600px;
+		}
+
+		.center {
+			width: 60%;
+		}
+
+		.footer {
+			background: #000;
+			height: 45px;
+			text-align: center;
+			color: #FFF;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu"></div>
+	<div class="container">
+		<div class="left">Left</div>
+		<div class="center">Center</div>
+		<div class="right">Right</div>
+	</div>
+	<div class="footer">Footer</div>
+</body>
+</html>

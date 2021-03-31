@@ -27,5 +27,18 @@
 <body>
 	<div class="box1"></div>
 	<div class="box2"></div>
+	<script>
+		let isValidEmail = function(val) {
+			return /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(val) || /w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*/.test(val);
+		}
+
+		Test
+		console.log(isValidEmail('abc@gmail.com')) // true
+		console.log(isValidEmail ('abcxyz')) // true
+		console.log(isValidEmail ('abcxyz@')) // false
+		console.log(isValidEmail ('example@gmail')) // false
+		console.log(isValidEmail ('yongsheho@yahoo')) // false
+		console.log(isValidEmail ('hoangtunho@yahoo.com')) // true
+	</script>
 </body>
 </html>
