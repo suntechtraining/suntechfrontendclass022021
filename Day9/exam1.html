@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Resposive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 780px)" href="mobile.css">
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+
+        @media only screen and (min-width: 500px) {
+            .box {
+                background: red;
+            }
+        }
+
+
+        @media only screen and (min-width: 800px) {
+            .box {
+                background: blue;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .box {
+                background: orange;
+            }
+        }
+
+        @media only screen and (mediafeature and|or|not mediafeature) {
+             CSS-Code;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
